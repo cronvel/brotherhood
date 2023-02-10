@@ -1,6 +1,6 @@
 {
   "name": "brotherhood",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Turn Node's CommonJs module and packages into browser's packages.",
   "main": "lib/Brotherhood.js",
   "directories": {
