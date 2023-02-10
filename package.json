@@ -1,0 +1,49 @@
+{
+  "name": "brotherhood",
+  "version": "0.0.1",
+  "description": "Turn Node's CommonJs module and packages into browser's packages.",
+  "main": "lib/Brotherhood.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "brotherhood": "./bin/brotherhood"
+  },
+  "dependencies": {
+    "fs-kit": "^0.6.5",
+    "logfella": "^1.4.3",
+    "string-kit": "^0.17.8",
+    "utterminal": "^0.5.51"
+  },
+  "scripts": {
+    "test": "tea-time -R dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronvel/brotherhood.git"
+  },
+  "keywords": [
+    "browser",
+    "packager"
+  ],
+  "author": "Cédric Ronvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronvel/brotherhood/issues"
+  },
+  "config": {
+    "tea-time": {
+      "coverDir": [
+        "lib"
+      ]
+    }
+  },
+  "copyright": {
+    "title": "Brotherhood",
+    "years": [
+      2022,
+      2023
+    ],
+    "owner": "Cédric Ronvel"
+  }
+}
