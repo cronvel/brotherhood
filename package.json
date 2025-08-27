@@ -12,6 +12,7 @@
   "dependencies": {
     "fs-kit": "^0.6.5",
     "logfella": "^1.4.3",
+    "path-browserify": "^1.0.1",
     "string-kit": "^0.17.8",
     "utterminal": "^0.5.51"
   },
