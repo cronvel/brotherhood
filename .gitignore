@@ -14,7 +14,9 @@ _build
 _templates
 _static
 out.js
+out.min.js
 out-esm.js
+out-esm.min.js
 *-out-esm.js
 
 

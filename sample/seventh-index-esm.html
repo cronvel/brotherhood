@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Seventh ESM test</title>
+	</head>
+	<body>
+		<h2>Seventh ESM test</h2>
+		<script type="module">
+			import Promise from "./seventh-out-esm.js" ;
+
+			function doSomething( txt , shouldReject = false , delay = 250 ) {
+				return new Promise( ( resolve , reject ) => {
+					setTimeout( () => {
+						console.log( txt ) ;
+						if ( shouldReject ) { reject( txt ) ; }
+						else { resolve( txt ) ; }
+					} , delay ) ;
+				} ) ;
+			}
+			
+			Promise.all( [
+				//new Promise().reject( 'reject zero' ) ,
+				//'static' ,
+				doSomething( 'one' ) ,
+				doSomething( 'two' , false , 1500 ) ,
+				doSomething( 'three' ) ,
+				//doSomething( 'reject' , true , 1000 ) ,
+			] )
+			.then( ( values ) => {
+				console.log( 'then' , values ) ;
+			} )
+			.catch( ( error ) => {
+				console.error( 'catch' , error ) ;
+			} )
+		</script>
+	</body>
+</html>
