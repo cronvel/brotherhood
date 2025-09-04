@@ -15,7 +15,9 @@ _build
 _templates
 _static
 out.js
+out.min.js
 out-esm.js
+out-esm.min.js
 *-out-esm.js
 
 
@@ -58,3 +60,18 @@ Thumbs.db
 test
 log
 sample
+test/
+doc/
+sample/
+builder/
+bench/
+log/
+Makefile
+wfm.json
+documentation.md
+bdd-spec.md
+SECURITY.md
+.eslintrc.js
+eslint.config.js
+esbuild.config.js
+.jshintrc
