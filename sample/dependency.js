@@ -10,8 +10,7 @@ function logger( format , ... args ) {
 }
 
 logger.path = require( 'path' ) ;
-//logger.Buffer = Buffer ;
-//logger.Buffer = "bob" ;
+logger.Buffer = Buffer ;
 
 module.exports = logger ;
 
